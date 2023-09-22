@@ -5,7 +5,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  list-style: none;
 }
 
 body {
@@ -24,6 +23,7 @@ header {
   background-image: url("../img/background-header.png");
   width: 100%;
   position: relative;
+  top: 0;
   z-index: 0;
 }
 
@@ -45,7 +45,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 50rem;
+  width: 100%;
 }
 .nav-bar a {
   text-decoration: none;
@@ -222,13 +222,11 @@ header {
   margin: 0 2.5rem 3rem 0;
   width: 16.25rem;
   height: 32.75rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   border-radius: 0.5rem;
-  background-image: url("../img/section-2,box-1.png");
+  cursor: pointer;
 }
-.section-2-box:last-child {
-  margin: 0 2.5rem 0 0;
+.section-2-box .section-2-box-text__hover {
+  color: transparent;
 }
 .section-2-box:hover {
   -webkit-box-shadow: 0px 4px 80px 0px rgba(113, 133, 164, 0.5);
@@ -237,6 +235,9 @@ header {
           transform: translate(0, -10px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.section-2-box:last-child {
+  margin: 0 2.5rem 0 0;
 }
 
 .section-2-text {
@@ -406,9 +407,9 @@ header {
   letter-spacing: 0.0075rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1130px) {
   .section-3-title {
-    margin: 5rem 0 2rem 2rem;
+    margin: 5rem 0 2rem 0rem;
     color: #1D1D1B;
     font-family: Rubik;
     font-size: 3rem;
@@ -417,7 +418,8 @@ header {
     line-height: normal;
   }
   .section-3-box {
-    width: 32rem;
+    vertical-align: middle;
+    width: 40rem;
     height: 27.875rem;
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -433,23 +435,91 @@ header {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    margin: 0rem 0rem 0 0rem;
+    margin: 0 auto;
+  }
+  .section-3-box-title1 {
+    vertical-align: middle;
+    color: #1D1D1B;
+    font-family: Rubik;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 142%; /* 7.81rem */
+    letter-spacing: 0.0275rem;
+    position: relative;
+    margin: 0 12rem 0 0;
+  }
+  .section-3-box-title1 span {
+    color: #27AE60;
+    font-family: Rubik;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142%; /* 3.55rem */
+    letter-spacing: 0.0125rem;
+    position: absolute;
+    top: 0;
+  }
+  .section-3-box-text-bottom1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 -2rem;
+    color: #67675F;
+    font-family: Rubik;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%; /* 2.13rem */
+    letter-spacing: 0.0075rem;
+  }
+  .section-3-box-title2 {
+    color: #1D1D1B;
+    font-family: Rubik;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 142%; /* 7.81rem */
+    letter-spacing: 0.0275rem;
+    position: relative;
+  }
+  .section-3-box-text-bottom2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 -0.5rem;
+    color: #67675F;
+    font-family: Rubik;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%; /* 2.13rem */
+    letter-spacing: 0.0075rem;
   }
 }
 .section-4-container {
   margin: 5rem 0 0 0;
   background: #F8F8F8;
   width: 100%;
-  height: 36.75rem;
+  height: 36%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
+}
+
+.section-4-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section-4-block__box {
-  padding: 3rem 0 0 10rem;
+  padding: 1rem 0 0 4rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,7 +532,7 @@ header {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 1.4375rem;
-  width: 40rem;
+  max-width: 40rem;
 }
 
 .section-4-block-text1 {
@@ -513,4 +583,100 @@ header {
 .section-4-block-button:active {
   -webkit-box-shadow: inset 0 0 15px black;
           box-shadow: inset 0 0 15px black;
+}
+
+.section-4-block__inputs {
+  margin: 0 0rem 0 2rem;
+  position: relative;
+  width: 32.875rem;
+  height: 25.6875rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07);
+          box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-4-block__inputs input {
+  padding-left: 40px;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  width: 30rem;
+  height: 4.0625rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid #DDD;
+}
+
+.section-4-block__inputs-input3 {
+  position: relative;
+}
+.section-4-block__inputs-input3 input {
+  height: 10rem;
+  padding: 0 0 4rem 40px;
+}
+
+@media (max-width: 1130px) {
+  .section-4-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-4-block-text1 {
+    width: 34.5625rem;
+  }
+  .section-4-block__inputs {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #FFF;
+    -webkit-box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07);
+            box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07);
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-4-block__inputs input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 30rem 1.25rem 0;
+    width: 90%;
+  }
 }
