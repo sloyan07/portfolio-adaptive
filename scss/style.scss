@@ -286,14 +286,15 @@ transition: 0.3s;
 }
 
 .section-3-body{
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .title{
-    margin: 5rem 0 2rem 2rem;
-    color: #1D1D1B;
+margin: 5rem 0 2rem 2rem;
+color: #1D1D1B;
 font-family: Rubik;
 font-size: 2.625rem;
 font-style: normal;
@@ -302,9 +303,9 @@ line-height: normal;
 }
 
 .section-3-text{
-    margin: 0 0 2rem 2rem;
-    width: 36.1875rem;
-    color: #67675F;
+margin: 0 0 2rem 2rem;
+width: 36.1875rem;
+color: #67675F;
 font-family: Rubik;
 font-size: 1.125rem;
 font-style: normal;
@@ -553,7 +554,7 @@ line-height: 140%;
     padding: 1.25rem 2.25rem;
     align-items: flex-start;
     gap: 0.625rem;
-    margin: 3.75rem 0 2rem 1rem;
+    margin: 3.75rem 0 2rem 5rem;
     cursor: pointer;
 
     &:hover{
@@ -564,11 +565,11 @@ line-height: 140%;
     }
     }
 
-
+    // Блок моих инпутов
     .section-4-block__inputs{
-        margin: 0 0rem 0 2rem;
-       position: relative;
-        width: 32.875rem;
+margin: 0 0rem 0 2rem;
+position: relative;
+width: 32.875rem;
 height: 25.6875rem;
 flex-shrink: 0;
 border-radius: 0.75rem;
@@ -579,7 +580,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
+// а вот и сами инпуты
 input{
     padding-left: 40px;
     font-size: 1.125rem;
@@ -589,6 +590,10 @@ height: 4.0625rem;
 flex-shrink: 0;
 border-radius: 0.375rem;
 border: 1px solid #DDD;
+outline: none;
+&:hover{
+    box-shadow: 0 0 5px black;
+}
 }
     }
 
@@ -615,7 +620,7 @@ input{
     .section-4-block__inputs{
         
        position: relative;
-       width: 100%;
+width: 100%;
 margin: 0;
 text-align: left;
 flex-shrink: 0;
@@ -625,8 +630,6 @@ box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07);
 padding: 1rem;
 display: flex;
 flex-direction: column;
-
-
 input{
     display: flex;
     flex-direction: column;
@@ -636,11 +639,218 @@ input{
 
     }
 }
+//  Сделать мои инпуты на пол ширину экрана и выровнить в левый краый. (22.09.23 сделал)
+// end section-4 наконец-то ахахахахахах
 
 
+// start section-5
+
+.section-5-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
-//  Сделать мои инпуты на пол ширину экрана и выровнить в левый краый (22.09.23 сделал)
+// Карта
+.section-5-map{
+    position: relative;
+    img{
+width: 31.5rem;
+// width: 100%;
+height: 34rem;
+flex-shrink: 0;
+    }
+    // Зона доставки
+    .section-5-map__text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1rem;
+        display: inline-flex;
+padding: 0.75rem 0.875rem;
+align-items: flex-start;
+gap: 0.625rem;
+border-radius: 0.25rem;
+background: #27AE60;
+color: #FFF;
+font-family: Montserrat;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 1.575rem */
+    }
+}
+// Доставка
+.section-5-block__title{
+    color: #1E1E1C;
+font-family: Rubik;
+font-size: 2.625rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 30rem;
+text-align: center;
+}
+
+// Основная миссия
+.section-5-block__text{
+    letter-spacing: 0.5px;
+    margin:  1.5rem 0 0 0;
+    width: 32.1875rem;
+    color: #1E1E1C;
+font-family: Rubik;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 1.75rem */
+}
+
+// списки
+.section-5-block__list{
+    position: relative;
+    margin: 2rem 0 0 0;
+    li{
+list-style: none;
+background: url('../img/star.svg') no-repeat;
+background-position: left;
+padding: 0 0 0 40px;
+margin: 0 0 2rem 0;
+width: 38.125rem;
+color: #1E1E1C;
+font-family: Rubik;
+font-size: 1rem;
+font-style: normal;
+font-weight: 300;
+line-height: 140%; /* 1.4rem */
+    }
+}
+
+// блок
+.section-5-block{
+    margin: 2rem 0 0 0;
+}
+
+@media (max-width:1130px) {
+
+    .section-5-map{
+        img{
+            width: 46rem;
+            height: 38rem;
+        }
+    }
+}
+
+// end section-5 (ураааааа)
 
 
+// start footer
 
+// оболочка
+footer{
+    margin: 4rem 0 0 0;
+    width: 100%;
+    background-color: #424141;
+    height: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+// позиция
+.footer__block {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+// СПЕЦ-ТРАНС
+.footer__title {
+padding: 1rem 0;
+margin: 0 0 0 1rem;
+}
+
+// политика конфидциальности
+.footer__text-opacity {
+    margin: 0 0 0 1.5rem;
+    a{
+        text-decoration: none;
+    opacity: 0.6;
+    color: #FFF;
+font-family: Rubik;
+letter-spacing: 0.6px;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 0.9rem */
+&:hover{
+    color: white;
+    opacity: 1;
+    transition:0.3s;
+}
+    }
+}
+
+// материалы услуги
+.footer__text1, .footer__text2 {
+    a{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.35rem */
+    margin: 0 0 0rem 2rem;
+    text-decoration: none;
+    opacity: 0.8;
+    &:hover{
+        color: white;
+        opacity: 1;
+        transition:0.3s;
+    }
+    }
+}
+// Материалы
+.footer__text1{
+    margin-left: 1rem;
+}
+
+// vk watsapp
+.footer__communication{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    
+    img{
+        padding: 0 0.5rem;
+        border-radius: 50%;
+    }
+}
+
+
+// 7 916 456 20 21
+.footer__number{
+margin: 0 0 0 2rem;
+a{
+    text-decoration: none;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 0.75rem */
+width: 10.625rem;
+height: 2.625rem;
+flex-shrink: 0;
+background-color: transparent;
+border: 1px solid #FFF;
+padding: 1rem;
+}
+&:hover{
+text-decoration: underline;
+text-decoration-color: white;
+}
+}
+// конец footer и почти конец моего проэкта
+//дальше я буду изучать JavaScript и буду делать меню бургер и буду делать адаптивной и в моб. устройствах и в экранах 1400px
+//  Дальше больше! Сегодня 25.09.2023
