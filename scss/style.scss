@@ -289,6 +289,7 @@ transition: 0.3s;
 
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -597,6 +598,7 @@ outline: none;
 }
     }
 
+    // Комментарии
 .section-4-block__inputs-input3{
    position: relative;
 input{
@@ -820,12 +822,12 @@ line-height: 120%; /* 0.9rem */
     display: flex;
     flex-wrap: wrap;
     margin-left: 2rem;
-    
     img{
         padding: 0 0.5rem;
-        border-radius: 50%;
+       border-radius: 50%;
     }
 }
+
 
 
 // 7 916 456 20 21
@@ -851,6 +853,7 @@ text-decoration: underline;
 text-decoration-color: white;
 }
 }
+
 // конец footer и почти конец моего проэкта
 //дальше я буду изучать JavaScript и буду делать меню бургер и буду делать адаптивной и в моб. устройствах и в экранах 1400px
 //  Дальше больше! Сегодня 25.09.2023
