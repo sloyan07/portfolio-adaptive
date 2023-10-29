@@ -7,7 +7,6 @@
 
     <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="/js/script.js"></script>
 </head>
 <body>
 <div class="container">
@@ -23,6 +22,7 @@
     </div>
 
     <div class="nav-bar">
+        <nav>
         <ul>
            <a href="#"> <li>Услуги</li> </a>
            <a href="#"> <li>Материалы</li> </a>
@@ -30,6 +30,7 @@
            <a href="#"> <li>О компании</li> </a>
            <a href="#"> <li>Контакты</li> </a>
         </ul>
+    </nav>
     </div>
 </div>
     <div class="header__text-block">
@@ -166,19 +167,19 @@
                                  <p>Закажите обратный звонок и узнайте больше о наших услугах!</p> 
                             <span>Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут</span>
                             </div>
-                            <a href="#">
-                                
+                            
+                               <form method="post" action="#"> 
                             <div class="section-4-block-button">
-                             Заказать звонок
+                              Заказать звонок
                             </div>
-                        </a>
+                        
                         </div>
 
 
                         <div class="section-4-block__inputs">
                             <div class="section-4-block__inputs-body">
                                 <div class="section-4-block__inputs-block">
-                                    <form action="#">
+
                                     <div class="section-4-block__inputs-input1">
                                         <input placeholder="Имя" type="text">
                                     </div>
@@ -188,17 +189,14 @@
                                     <div class="section-4-block__inputs-input3">
                                         <input placeholder="Комментарии" type="text">
                                     </div>
+                                
                                     
-                                    </form>
                                 </div>
-                                
-                                <!-- <div class="section-4-list">
-                                 <p> Далеко-далеко за словесными горами в стране.  <input type="checkbox"> </p> 
-                                
-                            </div> -->
+                            </form>
+
                             </div>
                         </div>
-
+                    
 
 
                     </div>
@@ -285,4 +283,5 @@
 
 </div>
 </body>
+<script src="/js/script.js"></script>
 </html>

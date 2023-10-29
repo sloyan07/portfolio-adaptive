@@ -25,7 +25,6 @@ width: 100%;
 position: relative;
 top: 0;
 z-index: 0;
-
 }
 
 .header__body{
@@ -225,16 +224,17 @@ cursor: pointer;
 }
 
 &:hover{
-box-shadow: 0px 4px 80px 0px rgba(113, 133, 164, 0.50);
-transform: translate(0, -10px);
-transition: 0.3s;
 
+    box-shadow: 0px 4px 80px 0px rgba(113, 133, 164, 0.50);
+    transform: translate(0, -10px);
+    transition: 0.5s;
 }
 &:last-child{
     margin: 0 2.5rem 0 0;
 }
 
 }
+
 
 // текст
 .section-2-text{
@@ -501,7 +501,7 @@ position: relative;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    // justify-content: center;
+    justify-content: center;
 }
 
 
@@ -602,8 +602,9 @@ outline: none;
 .section-4-block__inputs-input3{
    position: relative;
 input{
+    max-width: 50rem;
     height: 10rem;
-    padding: 0 0 4rem 40px;
+    padding: 0 40px 4rem 40px;
 }
 }
 
@@ -617,7 +618,6 @@ input{
     .section-4-block-text1{
         width: 34.5625rem;
     }
-
 
     .section-4-block__inputs{
         
@@ -755,6 +755,7 @@ footer{
     background-color: #424141;
     height: 10rem;
     position: relative;
+    
     display: flex;
     align-items: center;
 }
@@ -806,12 +807,13 @@ line-height: 120%; /* 0.9rem */
     text-decoration: none;
     opacity: 0.8;
     &:hover{
-        color: white;
+        color: #fff;
         opacity: 1;
-        transition:0.3s;
+        transition: 0.3s;
     }
     }
 }
+
 // Материалы
 .footer__text1{
     margin-left: 1rem;
@@ -854,6 +856,36 @@ text-decoration-color: white;
 }
 }
 
+@media (max-width:1227px) {
+    .footer__text1, .footer__text2{
+        display: none;
+    }
+    .footer__number{
+        margin: 0 0 0 3rem;
+    }
+}
+
+@media (max-width:995px) {
+    footer{
+        
+        .footer__number{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1440px){
+    footer{
+        .footer__communication{
+            margin: 0 0 0 4rem;
+        }
+        .footer__number{
+            margin: 0 0 0 4rem;
+        }
+    }
+}
+
+
 // конец footer и почти конец моего проэкта
-//дальше я буду изучать JavaScript и буду делать меню бургер и буду делать адаптивной и в моб. устройствах и в экранах 1400px
+//дальше я буду изучать JavaScript и буду делать меню бургер и буду делать адаптивной в моб. устройствах 
 //  Дальше больше! Сегодня 25.09.2023
